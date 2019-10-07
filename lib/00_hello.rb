@@ -1,7 +1,16 @@
 def hello
-  return "Hello world!"
+ 	puts "Hello!" 	
 end
 
-def greet(name)
-
+def greet
+	puts "Quel est ton nom ?"
+	user_name = gets.chomp
+	print "Hello", " ", user_name, " ", "!"
 end
+
+def perform
+	hello
+	greet
+end
+
+perform
