@@ -48,12 +48,12 @@ describe "#multiply" do
   end
 
   it "multiplies two other numbers"
-    # one other test here, don't forget do end ;)
+    expect(multiply(5, 6)).to eq(30)
+  end
 
   it "multiplies two other numbers, one of them being 0"
-    # one last test, with 0 in it
-
-end
+  expect(multiply(3, 0)).to eq(0)
+  end
 
 describe "#power" do
   it "raises one number to the power of another number"
@@ -67,3 +67,4 @@ describe "#factorial" do
   it "computes the factorial of 5"
   it "computes the factorial of 10"
 end
+
